@@ -1,0 +1,16 @@
+function ontouch(hit)
+  if hit.Parent:findFirstChild("Humanoid") ~= nil then
+    for i = 1,10 do
+      script.Parent.Transparency = script.Parent.Transparency - 0.1
+      wait(0.1)
+    end
+    script.Parent.CanCollide = false
+    wait(3)
+    for i = 1,10 do
+      script.Parent.Transparency = script.Parent.Transparency + 0.1
+      wait(0.1)
+    end
+    script.Parent.CanCollide = true
+  end
+  
+script.Parent.Touched:connect(ontouch)
