@@ -1,0 +1,12 @@
+--[[
+this above thing makes everything after it a comment
+this below thing stops that
+--]]
+
+function teleport(hit) --function 'teleport'
+  if hit.Parent:findFirstChild("Humanoid") ~= nil then --standard check if player procedure
+    hit.Parent:MoveTo(workspace.Part2.Position) --moves the player to 'Part2', change 'Part2' to the name of the endpoint brick
+  end
+end
+script.Parent.Touched:connect(teleport)
+--put this inside the teleport brick, does not work if it is in a model because models do not have the 'Touched' event
