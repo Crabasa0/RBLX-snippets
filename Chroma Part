@@ -1,0 +1,9 @@
+local part = script.Parent
+--Set color once
+part.BrickColor = BrickColor.new("Baby blue")
+
+--random colors forever
+while true do
+	part.BrickColor = BrickColor.random()
+	wait(0.3)
+end
