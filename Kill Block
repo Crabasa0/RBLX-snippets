@@ -1,0 +1,8 @@
+function onTouch(part)
+	local character = part.Parent
+	if (character:FindFirstChild("Humanoid") ~= nil) then
+		character:breakJoints()
+	end
+end
+
+script.Parent.Touched:Connect(onTouch)
