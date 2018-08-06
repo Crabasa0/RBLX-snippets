@@ -1,0 +1,7 @@
+function ontouch(hit)
+	if hit.Parent:FindFirstChild("Humanoid") ~= nil then
+		hit.Parent.Humanoid.JumpPower = 100
+		hit.Parent.Humanoid.WalkSpeed = 50
+	end
+end
+script.Parent.Touched:Connect(ontouch)
