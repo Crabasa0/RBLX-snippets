@@ -1,0 +1,13 @@
+--Per our discussion of recursion today, an example for calculating the nth Fibonacci number.
+--Note: this is VERY INEFFICIENT. Please do not pass it large numbers.
+--If you want, I can show you more efficient ways to do this
+
+function fibonacci(n)
+	if n==1 or n==2 then
+		return 1 --base case
+	else
+		return fibonacci(n-2)+fibonacci(n-1) --recursive case
+	end
+end
+
+print(fibonacci(5))
