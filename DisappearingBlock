@@ -1,13 +1,13 @@
 function ontouch(hit) --makes function called 'ontouch'
   if hit.Parent:findFirstChild("Humanoid") ~= nil then --checks if what was hit was a player
     for i = 1,10 do --for loop that loops until 'i' is equal to 10 (i increases by 1 each loop by default, so it loops 10 times)
-      script.Parent.Transparency = script.Parent.Transparency - 0.1 --transparency 0 means its opaque, so slowly make it transparent
+      script.Parent.Transparency = script.Parent.Transparency + 0.1 --transparency 0 means its opaque, so slowly make it transparent
       wait(0.1) --wait 0.1 seconds
     end
     script.Parent.CanCollide = false --make it so players fall through the brick when its invisible
     wait(3) --wait 3 seconds
     for i = 1,10 do
-      script.Parent.Transparency = script.Parent.Transparency + 0.1 --make it opaque again
+      script.Parent.Transparency = script.Parent.Transparency - 0.1 --make it opaque again
       wait(0.1)
     end
     script.Parent.CanCollide = true
