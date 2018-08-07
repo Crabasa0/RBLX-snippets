@@ -15,4 +15,4 @@ function ontouch(hit) --makes function called 'ontouch'
   
 script.Parent.Touched:connect(ontouch) --event touched fires 'ontouch'
 
-print("kandan is kool and its not candle")
+print("kandan is kool and is not candle")
